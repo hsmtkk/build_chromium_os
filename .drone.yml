@@ -8,3 +8,12 @@ steps:
     commands:
       - hadolint Dockerfile
 
+  - name: build_docker
+    image: plugins/docker
+    settings:
+      username: hsmtkk
+      password:
+        from_secret: docker_hub_token
+      repo: hsmtkk/build_chromium_os
+      tags: latest
+
