@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: lint_dockerfile
+    image: hadolint/hadolint:v1.18.0
+    commands:
+      - hadolint Dockerfile
+
