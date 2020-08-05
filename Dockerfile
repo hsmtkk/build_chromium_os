@@ -7,7 +7,7 @@ RUN apt-get -y update \
 
 WORKDIR /tmp
 
-RUN curl -O https://storage.googleapis.com/git-repo-downloads/repo \
+RUN curl --insecure -O https://storage.googleapis.com/git-repo-downloads/repo \
  && chmod 755 repo \
  && mv repo /usr/local/bin/repo \
  && ln -s /usr/bin/python3.8 /usr/bin/python \
