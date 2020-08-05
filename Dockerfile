@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 RUN apt-get -y update \
- && apt-get --no-install-recommends -y install ca-certificates=20190110ubuntu1.1 curl=7.68.0-1ubuntu2.1 git=1:2.25.1-1ubuntu3 gpg=2.2.19-3ubuntu2 python3.8=3.8.2-1ubuntu1.2 \
+ && apt-get --no-install-recommends -y install ca-certificates=20190110ubuntu1.1 curl=7.68.0-1ubuntu2.1 git=1:2.25.1-1ubuntu3 gpg=2.2.19-3ubuntu2 gpg-agent=2.2.19-3ubuntu2 python3.8=3.8.2-1ubuntu1.2 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
