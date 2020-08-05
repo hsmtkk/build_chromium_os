@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 RUN apt-get -y update \
- && apt-get --no-install-recommends -y install curl==7.68.0-1ubuntu2.1 git==2.25.1-ubuntu3 gpg==2.2.19-3ubuntu2 python3.8==3.8.2-1ubuntu1.2 \
+ && apt-get --no-install-recommends -y install curl=7.68.0-1ubuntu2.1 git=2.25.1-ubuntu3 gpg=2.2.19-3ubuntu2 python3.8=3.8.2-1ubuntu1.2 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
